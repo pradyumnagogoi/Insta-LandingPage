@@ -1,0 +1,141 @@
+body {
+  font-family: Avenir-Next, Roboto, sans-serif;
+}
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+
+/* navigation bar */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  max-width: 100%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.search {
+  background-color: #fafafa;
+  width: 250px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  padding: 12px;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.icon {
+  height: 30px;
+}
+.iconImg {
+  height: 30px;
+  border-radius: 50%;
+}
+
+/* main */
+
+main {
+  background-color: #fafafa;
+}
+
+/* header section (profile image, description etc.) */
+
+.profile-header-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px;
+  padding-left: 15%;
+  padding-right: 15%;
+  border-top: 1px solid #dbdbdb;
+}
+.profileImg {
+  border-radius: 50%;
+  height: 180px;
+  margin-top: 20px;
+}
+.profileName {
+  font-size: 30px;
+}
+.profileName,
+.profileMid {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.followButton,
+.followSuggest {
+  background-color: #0095f6;
+  color: white;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+}
+.followButton {
+  width: 80px;
+}
+.followSuggest {
+  width: 30px;
+}
+.followRestrict {
+  border: none;
+}
+.followRestrictImg {
+  height: 20px;
+  background: transparent;
+}
+
+/* stories */
+
+.stories-section {
+  padding: 15px;
+  padding-left: 20%;
+  padding-right: 20%;
+  max-width: 940px;
+}
+.instaStories {
+  display: flex;
+  flex-direction: row;
+  gap: 55px;
+  overflow-x: scroll;
+  text-align: center;
+}
+.instaStories::-webkit-scrollbar {
+  display: none;
+}
+.storiesImg {
+  height: 80px;
+  border: 2px solid #dbdbdb;
+  border-radius: 50%;
+}
+
+/* images grid with tabs */
+
+.flex-col {
+  border-top: 1px solid #dbdbdb;
+  padding: 15px;
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 940px;
+}
+.flex-colButton {
+  border: none;
+  background: transparent;
+}
+.imgCol {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.postImages {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+}
